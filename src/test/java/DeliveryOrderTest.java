@@ -54,7 +54,7 @@ public class DeliveryOrderTest {
         $("[Data-test-id=city] input").setValue(address);
         $("[Data-test-id=date] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
         $("[Data-test-id=date] input").setValue(date);
-//        $("[Data-test-id=name] input").setValue(name);
+        $("[Data-test-id=name] input").setValue(name);
         $("[Data-test-id=phone] input").setValue(phone);
         $(By.cssSelector("[class='checkbox__box']")).click();
         $$("button").find(exactText("Запланировать")).click();
